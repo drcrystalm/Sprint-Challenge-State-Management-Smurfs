@@ -33,6 +33,8 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 -   [x ] What is the difference between Application state and Component state? When would be a good time to use one over the other?
 
+        Application state is immutable. Component only receives pieces of state.
+
 *   [x ] Describe `redux-thunk`, what does it allow us to do? How does it change our `action-creators`?
 
         redux-thunk is a node package, that makes the flow asynchronous, so that we can make API calls from our action creators. So basically, we are changing up the action creators to make asynchronous API calls.
