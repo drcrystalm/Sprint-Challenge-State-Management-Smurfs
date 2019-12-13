@@ -22,19 +22,24 @@ In this challenge, you are to build a Smurfs village utilizing context or Redux 
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
--   [ ] What problem does the context API help solve?
+-   [x ] What problem does the context API help solve?
 
     Context API let's use avoid the pitfalls of props drilling. We no longer have to pass props down from component to component. We can now store data on a context object, and retrieve the data from there.
 
--   [ ] In your own words, describe `actions`, `reducers` and the `store` and their role in Redux. What does each piece do? Why is the store known as a 'single source of truth' in a redux application?
+-   [x ] In your own words, describe `actions`, `reducers` and the `store` and their role in Redux. What does each piece do? Why is the store known as a 'single source of truth' in a redux application?
 
-The store contains the state for out application. Reducers are functions that return on object that will represent our state.
-Actions are
+        The store contains the state for out application. Reducers are functions that return on object that will represent our state. Reducers will NEVER update state directly, but will always return a new object.
+        Actions are the only way to modify application state when using Redux. When an action is dispatched, it flows thru all Reducers.
 
--   [ ] What is the difference between Application state and Component state? When would be a good time to use one over the other?
+-   [x ] What is the difference between Application state and Component state? When would be a good time to use one over the other?
 
--   [ ] Describe `redux-thunk`, what does it allow us to do? How does it change our `action-creators`?
--   [ ] What is your favorite state management system you've learned and this sprint? Please explain why!
+*   [x ] Describe `redux-thunk`, what does it allow us to do? How does it change our `action-creators`?
+
+        redux-thunk is a node package, that makes the flow asynchronous, so that we can make API calls from our action creators. So basically, we are changing up the action creators to make asynchronous API calls.
+
+-   [x ] What is your favorite state management system you've learned and this sprint? Please explain why!
+
+        I like Redux, because of the time-stamp debugging features, and the use of predictable state makes it easier to track data.
 
 ## Project Set Up
 
